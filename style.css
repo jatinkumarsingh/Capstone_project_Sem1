@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=BIZ+UDPMincho&family=Gothic+A1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+div,
+h1,
+h2,
+h4,
+p,
+input,
+body,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f6f5;
+}
+
+@keyframes slideDownNav {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+nav {
+  margin: 24px 180px 0px 180px;
+  padding: 24px 32px;
+  border-radius: 16px;
+  background: #d9e0de;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  backdrop-filter: blur(96px);
+  box-shadow: 0px 4px 24px 0px #00000029;
+  animation: slideDownNav 1s ease-out;
+}
+#contact {
+  display: none;
+}
+
+.pageLinks {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+nav a {
+  font-family: "Gothic A1";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-decoration: none;
+  color: #000;
+}
+
+nav h1 {
+  font-family: "Abyssinica SIL";
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 144px 48px 48px 48px;
+  font-family: "BIZ UDPMincho";
+  font-size: 120px;
+  font-weight: 400;
+  line-height: 120px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+@keyframes typingEffect {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes typingEffect {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+header div {
+  padding: 0px 48px 96px 48px;
+}
+
+.collage {
+  padding: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.collage > div {
+  transition: 0.3s ease;
+}
+
+.collage > div:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.collage h4 {
+  font-family: "Gothic A1";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.collage p {
+  font-family: "Gothic A1";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #616262;
+}
+
+.about {
+  padding: 96px 48px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about p {
+  font-family: "BIZ UDPMincho";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.contact {
+  padding: 200px 48px 272px 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h1 {
+  font-family: "BIZ UDPMincho";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.contact p {
+  font-family: "Gothic A1";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.contact a {
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #19332d;
+}
+
+.contact input {
+  font-family: "Gothic A1";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  width: 56px;
+  height: 64px;
+  border-radius: 8px;
+  border: 1px solid black;
+  color: #a3a3a3;
+}
+
+.contact button {
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 32px;
+  padding: 8px 16px;
+  background-color: #19332d;
+  color: white;
+  border: none;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.contact .inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 96px 48px 24px 48px;
+}
+
+footer h4 {
+  font-family: "BIZ UDPMincho";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #616262;
+}
+
+footer button {
+  padding: 12px 24px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  background: #f2f6f5;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  #contact {
+    display: block;
+  }
+  .socials {
+    display: none;
+  }
+  nav h1 {
+    order: -1;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    /*align-items: start;*/
+    margin: 24px 140px 0;
+  }
+  .pageLinks {
+    flex-direction: column;
+    gap: 8px;
+  }
+  header h1{
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .collage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about p {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    margin: 24px 50px 0;
+  }
+  header h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .collage {
+    grid-template-columns: 1fr;
+  }
+  .contact {
+    padding: 200px 24px 272px;
+  }
+}
+
